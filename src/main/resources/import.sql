@@ -1,0 +1,16 @@
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('FÁBIO AKITA', '22233344455', 15000.00, '1979-01-15', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('FILIPE DESCHAMPS', '99993847264', 12000.00, '1993-02-21', 2);
+INSERT INTO tb_client(name, cpf, income, birth_date, children)VALUES ('UNCLE BOB', '99999988883', 20000.00, '1960-01-15', 3);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('MARK ZUCKERBERG', '99999988876', 30000.00, '1980-04-11', 2);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('DANIEL EK', '11122233344', 33000.00, '1985-06-15', 2);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('GRACE HOPPER', '00099988833', 50000.00, '1950-03-04', 3);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('JOHN BACKUS', '44455566678', 25000.00, '1977-01-15', 4);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('BILL GATES', '44455567876', 235000.00, '1950-01-01', 5);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('BRIAN KERNIGHAN', '11122233344', 435000.00, '1945-08-03', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('KEN THOMPSON', '10101010102', 532000.00, '1930-01-01', 3);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('TIM BERNERS-LEE', '00099988811', 523000.00, '1945-11-01', 5);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('BJARNE STROUSTRUP', '44433333333', 125000.00, '1934-01-26', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('LINUS TORVALDS', '66655588800', 522000.00, '1956-05-18', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('DENNIS RITCHIE', '66655544477', 678000.00, '1955-05-14', 5);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('ALAN MATHISON TURING', '99933322211', 334000.00, '1930-01-01', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('JAMES GOSLING', '99999999999', 995000.00, '1955-05-19', 0);

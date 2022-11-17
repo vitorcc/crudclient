@@ -1,25 +1,21 @@
-package com.imc.crudclient.entities;
+package com.imc.crudclient.dto;
 
-import javax.persistence.*;
+import com.imc.crudclient.entities.Client;
+
+import java.io.Serializable;
 import java.time.Instant;
-import java.util.Objects;
 
-@Entity
-@Table(name = "tb_client")
-public class Client {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ClientDTO implements Serializable {
     private Long id;
     private String name;
     private String cpf;
     private Double income;
-    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant birthDate;
     private Integer children;
 
-    public Client(){
-    }
-    public Client(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
+    public ClientDTO(){}
+
+    public ClientDTO(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
         this.id = id;
         this.name = name;
         this.cpf = cpf;
@@ -27,6 +23,16 @@ public class Client {
         this.birthDate = birthDate;
         this.children = children;
     }
+
+    public ClientDTO(Client client) {
+        this.id = client.getId();
+        this.name = client.getName();
+        this.cpf = client.getCpf();
+        this.income = client.getIncome();
+        this.birthDate = client.getBirthDate();
+        this.children = client.getChildren();
+    }
+
     public Long getId() {
         return id;
     }
@@ -73,17 +79,5 @@ public class Client {
 
     public void setChildren(Integer children) {
         this.children = children;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Client client)) return false;
-        return getCpf().equals(client.getCpf());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getCpf());
     }
 }
